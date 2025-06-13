@@ -2,14 +2,19 @@ import streamlit as st
 import pickle
 import re
 import pandas as pd
+import os
 
 # ✅ Set page configuration first (before any other Streamlit command)
 st.set_page_config(page_title="Spam Email Detector", page_icon="📩")
 
 # Load the model and vectorizer
-model = pickle.load(open('spam_detection_model.pkl', 'rb'))
-vectorizer = pickle.load(open('tfidf_vectorizer.pkl', 'rb'))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+model_path = os.path.join(BASE_DIR, 'spam_detection_model.pkl')
+vectorizer_path = os.path.join(BASE_DIR, 'tfidf_vectorizer.pkl')
+
+model = pickle.load(open(model_path, 'rb'))
+vectorizer = pickle.load(open(vectorizer_path, 'rb'))
 # Function to clean and preprocess the input text
 def preprocess_text(text):
     text = re.sub(r'\W', ' ', text)      # Remove non-word characters
