@@ -28,7 +28,7 @@ MarkupSafe==2.1.5
 matplotlib==3.9.2
 mdurl==0.1.2
 narwhals>=1.14.2
-numpy==2.3.0
+numpy>=1.23.5,<2.3
 packaging==24.1
 pandas==2.3.0
 pillow==10.4.0
