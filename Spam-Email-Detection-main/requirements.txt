@@ -1,4 +1,4 @@
-altair
+altair==4.2.2
 asgiref
 attrs
 blinker
@@ -50,7 +50,7 @@ setuptools
 six
 smmap
 sqlparse
-streamlit
+streamlit==1.32.2
 tenacity
 threadpoolctl
 toml
