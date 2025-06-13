@@ -47,7 +47,7 @@ rpds-py
 scikit-learn
 scipy
 setuptools
-six=
+six
 smmap
 sqlparse
 streamlit
