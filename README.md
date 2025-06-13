@@ -6,7 +6,7 @@ This project is focused on detecting spam emails using a Logistic Regression mod
 
 The application is deployed and can be accessed via the following link:
 
-🔗 [Spam Email Detection App]([(https://spamdetection-lul3trtfbpnmhv9q3ynvhb.streamlit.app/)])
+🔗 [Spam Email Detection App](https://spamdetection-lul3trtfbpnmhv9q3ynvhb.streamlit.app/)
 
 ## Overview
 
